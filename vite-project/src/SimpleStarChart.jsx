@@ -221,7 +221,7 @@ const SimpleStarChart = () => {
         })
         .attr('text-anchor', 'middle')
         .attr('fill', d => d.data.textColor)
-        .attr('font-size', 'clamp(11px, 1.8vw, 18px)')
+        .attr('font-size', 'clamp(9px, 1.44vw, 14px)')
         .attr('font-weight', 'bold')
         .attr('font-family', "'Georgia', serif")
         .style('pointer-events', 'none');
@@ -352,10 +352,10 @@ const SimpleStarChart = () => {
               .attr('class', 'pie-bg')
               .attr('cx', 0)
               .attr('cy', 0)
-              .attr('r', astellasTargetRadius + 8)
+              .attr('r', astellasTargetRadius + 2)
               .attr('fill', '#f8f9fa')
-              .attr('stroke', '#e9ecef')
-              .attr('stroke-width', 2);
+              .attr('stroke', '#cccccc')
+              .attr('stroke-width', 0.5);
           }
           pieGroup.attr('transform', `translate(${asterias.x},${asterias.y - shiftY})`);
         }
@@ -429,7 +429,7 @@ const SimpleStarChart = () => {
           color: '#fff',
           textAlign: 'center', // ★修正: 中央揃えに変更
           zIndex: 100,
-          fontSize: 'clamp(28px, 6vw, 64px)',
+          fontSize: 'clamp(22px, 4.8vw, 51px)',
           fontFamily: "'Georgia', serif",
           fontWeight: '300',
           letterSpacing: '2px'
@@ -446,7 +446,7 @@ const SimpleStarChart = () => {
           opacity: scrollProgress >= 0.2 && scrollProgress < 0.4 ? 0.95 : 0,
           background: 'rgba(50, 55, 65, 0.85)', padding: '20px 40px', borderRadius: '12px',
           border: '1px solid rgba(255, 255, 255, 0.2)', color: '#ffffff',
-          fontSize: 'clamp(14px, 2vw, 20px)', fontFamily: "'Georgia', serif", textAlign: 'center',
+          fontSize: 'clamp(11px, 1.6vw, 16px)', fontFamily: "'Georgia', serif", textAlign: 'center',
           boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)', backdropFilter: 'blur(8px)',
           transition: 'all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1)', pointerEvents: 'none', zIndex: 50,
           width: 'max-content', maxWidth: '90vw', lineHeight: '1.6',
@@ -467,7 +467,7 @@ const SimpleStarChart = () => {
           opacity: scrollProgress >= 0.7 ? 0.95 : 0,
           background: 'rgba(50, 55, 65, 0.85)', padding: '20px 40px', borderRadius: '12px',
           border: '1px solid rgba(255, 255, 255, 0.2)', color: '#ffffff',
-          fontSize: 'clamp(14px, 2vw, 20px)', fontFamily: "'Georgia', serif", textAlign: 'center',
+          fontSize: 'clamp(11px, 1.6vw, 16px)', fontFamily: "'Georgia', serif", textAlign: 'center',
           boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)', backdropFilter: 'blur(8px)',
           transition: 'all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1)', pointerEvents: 'none', zIndex: 50,
           width: 'max-content', maxWidth: '90vw', lineHeight: '1.6',
